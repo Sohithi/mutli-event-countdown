@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Event Countdown</title>
+    <link rel="stylesheet" href="crud.css" />
+</head>
+
+<body>
+    <h1>📅 Event Countdown Manager</h1>
+    <form id="eventForm">
+        <input type="text" id="title" placeholder="Event Title" required />
+        <textarea id="description" placeholder="Description (optional)"></textarea>
+        <input type="datetime-local" id="datetime" required />
+        <input type="email" id="email" placeholder="Email for Reminder (optional)" />
+        <select id="category">
+            <option value="birthday">🎂 Birthday</option>
+            <option value="meeting">📅 Meeting</option>
+            <option value="holiday">🏖️ Holiday</option>
+            <option value="custom">✨ Custom</option>
+        </select>
+        <button type="submit">Add Event</button>
+    </form>
+
+    <div id="eventsContainer"></div>
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
